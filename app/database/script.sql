@@ -1,0 +1,29 @@
+-- Database: ON_POST
+
+DROP DATABASE IF EXISTS "ON_POST";
+
+CREATE DATABASE "ON_POST"
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'pt_BR.UTF-8'
+    LC_CTYPE = 'pt_BR.UTF-8'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+	
+CREATE TABLE USERS(
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(100),
+	email VARCHAR(150),
+	password VARCHAR(150),
+	created_in TIMESTAMP
+);
+
+CREATE TABLE POST(
+	id SERIAL PRIMARY KEY,
+	title VARCHAR(100),
+	content TEXT,
+	created_in TIMESTAMP,
+	USER_id INTEGER REFERENCES USERS(id)
+);

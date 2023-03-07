@@ -4,6 +4,7 @@
 
         private $controller = "Pages";
         private $method = 'index';
+        private $paramters = [];
         public function __construct() {
 
             $url = $this->get_url() ? $this->get_url() : [0];
@@ -22,7 +23,9 @@
                     unset($url[1]);
                 }
             }
-            var_dump($this);
+            
+            $this->paramters = $url ? array_values($url) : [];
+            call_user_func_array([$this->controller, $this->method], $this->paramters);
         }
 
         private function get_url(){

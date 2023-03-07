@@ -1,0 +1,44 @@
+html, body {
+    min-height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    min-width: 300px;
+}
+main {
+    min-height: 68.5vh;
+}
+footer {
+    bottom: 0;
+    color: #FFF;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+}
+@media (min-height: 716px){
+    main {
+        min-height: 80vh;
+    }
+}
+#title-home{
+    font-size: 60px;
+}
+#img-home{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+@media(max-width: 515px){
+    #title-home{
+        font-size: 30px;
+    }
+    #img-home{
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
