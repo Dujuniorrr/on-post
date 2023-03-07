@@ -1,7 +1,6 @@
 <?php
     include_once("./../app/config.php");
-    include_once("./../app/libraries/Route.php");
-    include_once("./../app/libraries/Controller.php");
+    include_once("./../app/autoload.php");
 ?>
 
 <!DOCTYPE html>

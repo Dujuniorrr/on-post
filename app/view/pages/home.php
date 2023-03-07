@@ -22,5 +22,5 @@
     </main>
 
 <?php 
-   require_once("../app/view/footer.php")
+   require_once("../app/view/footer.html")
 ?>

@@ -17,7 +17,7 @@
         <a class="m-2 col-12 col-sm-auto"><button class="btn btn-primary fs-5">Entrar</button></a>
      </div>
      <div class="d-flex">
-         <a class="m-2 col-12 col-sm-auto"><button class="btn btn-primary fs-5">Cadastra-Se</button></a>
+         <a href="<?= URL ?>/user/register/" class="m-2 col-12 col-sm-auto"><button class="btn btn-primary fs-5">Cadastrar</button></a>
      </div>
     </div>
   </div>
