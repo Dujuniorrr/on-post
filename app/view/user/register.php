@@ -11,19 +11,31 @@
             </p>
             <div class="mb-3">
                 <label for="name" class="form-label">Nome</label>
-                <input required type="name" value="<?= $data['name'] ?>"  name="name" class="form-control" id="name" placeholder="Digite seu nome.">
+                <input type="name" value="<?= $data['name'] ?>"  name="name" class="form-control <?php if(isset($data['name_error'])): ?> is-invalid <?php endif; ?>" id="name" placeholder="Digite seu nome.">
+                <div class="invalid-feedback">
+                    <?= $data['name_error']; ?>
+                </div>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input required type="email" value="<?= $data['email'] ?>" name="email" class="form-control" id="email" placeholder="Digite seu email.">
+                <input type="text" value="<?= $data['email'] ?>" name="email" class="form-control  <?php if(isset($data['email_error'])): ?> is-invalid <?php endif; ?>" id="email" placeholder="Digite seu email.">
+                <div class="invalid-feedback">
+                    <?= $data['email_error']; ?>
+                </div>
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Senha</label>
-                <input required type="password" value="<?= $data['password'] ?>" name="password" class="form-control" id="password" placeholder="Digite sua senha">
+                <input type="password" value="<?= $data['password'] ?>" name="password" class="form-control  <?php if(isset($data['password_error'])): ?> is-invalid <?php endif; ?>" id="password" placeholder="Digite sua senha">
+                <div class="invalid-feedback">
+                    <?= $data['password_error']; ?>
+                </div>
             </div>
             <div class="mb-3">
                 <label for="password_confirm" class="form-label">Confirmação de Senha</label>
-                <input required type="password" value="<?= $data['password_confirm'] ?>" name="password_confirm" class="form-control" id="password_confirm" placeholder="Confirme sua senha">
+                <input type="password" value="<?= $data['password_confirm'] ?>" name="password_confirm" class="form-control  <?php if(isset($data['password_confirm_error'])): ?> is-invalid <?php endif; ?>" id="password_confirm" placeholder="Confirme sua senha">
+                <div class="invalid-feedback">
+                    <?= $data['password_confirm_error']; ?>
+                </div>
             </div>
             <div class="text-center mt-2">
                 <button type="submit" class="btn btn-primary">Cadastrar</button>
