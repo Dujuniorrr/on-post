@@ -4,7 +4,9 @@
 
         $dirs = [
             "libraries",
-            "helpers"
+            "helpers",
+            "model",
+            "dao"
         ];
 
         foreach($dirs as $dir){

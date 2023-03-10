@@ -5,6 +5,7 @@
         private $controller = "Pages";
         private $method = 'index';
         private $paramters = [];
+        
         public function __construct() {
 
             $url = $this->get_url() ? $this->get_url() : [0];

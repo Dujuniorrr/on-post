@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include_once("./../app/config.php");
     include_once("./../app/autoload.php");
 ?>

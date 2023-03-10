@@ -3,7 +3,7 @@
     class Validation {
 
         public static function check_name($name){
-            if(!preg_match('~^[[:alnum:]-]+$~u', $name)){
+            if(!preg_match('/^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/', $name)){
                 return false;
             }
             
