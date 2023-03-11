@@ -1,7 +1,4 @@
-<?php 
-   require_once("../app/view/header.php")
-?>
-    <main class="container col-lg-5 col-12 col-sm-10 col-md-6 mt-3">
+   <main class="container col-lg-5 col-12 col-sm-10 col-md-6 mt-3">
         <form name="login" method="POST" action="<?= URL ?>/users/login" class="border border-secondary rounded-2">
             <div class="bg-dark text-light p-3 pb-1">
                 <h2>
@@ -32,7 +29,3 @@
             </div>
         </form>
     </main>
-
-<?php 
-   require_once("../app/view/footer.html")
-?>

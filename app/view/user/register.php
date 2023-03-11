@@ -1,6 +1,3 @@
-<?php 
-   require_once("../app/view/header.php")
-?>
     <main class="container col-lg-5 col-12 col-sm-10 col-md-6 mt-3 mb-3">
         <form name="register" method="POST" action="<?= URL ?>/users/register" class="border border-secondary rounded-2">
             <div class="bg-dark text-light p-3 pb-1">
@@ -46,7 +43,3 @@
             </div>
         </form>
     </main>
-
-<?php 
-   require_once("../app/view/footer.html")
-?>

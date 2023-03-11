@@ -1,6 +1,3 @@
-<?php 
-   require_once("../app/view/header.php")
-?>
     <main>
         <div class="container m-auto mt-5 mb-5">
            <div class="row home-card">
@@ -20,7 +17,3 @@
           
         </div>
     </main>
-
-<?php 
-   require_once("../app/view/footer.html")
-?>

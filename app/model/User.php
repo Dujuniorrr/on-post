@@ -15,8 +15,8 @@
 
         public function create_session(){
             $_SESSION['user_id'] = $this->getId();
-            $_SESSION['user_name'] = $this->getId();
-            $_SESSION['user_email'] = $this->getId();
+            $_SESSION['user_name'] = $this->getName();
+            $_SESSION['user_email'] = $this->getEmail();
         }
 
         public function destroy_session(){
