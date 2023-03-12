@@ -9,6 +9,19 @@
             $this->conn = $db->connection();
         }
 
+        public function find_by_id($id){
+            $stmt = $this->conn->prepare("SELECT * FROM USERS WHERE id = :id");
+            $stmt->bindParam(":id", $id);
+            $stmt->execute();
+            if($stmt->rowCount() > 0){
+                $user = new User();
+                $user->build_user($stmt->fetch());
+                return $user;
+            }
+
+            return false;
+        }
+
         public function verify_user($email, $password){
             $stmt = $this->conn->prepare("SELECT * FROM USERS WHERE email = :email");
             $stmt->bindParam(":email", $email);

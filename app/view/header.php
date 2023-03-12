@@ -25,10 +25,8 @@
           </div>
       <?php else: ?>
           <div class="d-flex">
-          <a class="nav-link active text-light pe-2 ps-2 fs-4" aria-current="page" ><?= $_SESSION['user_name']?></a>
-          </div>
-          <div class="d-flex">
-          <a href="<?= URL ?>/users/logout" class="nav-link active text-light pe-2 ps-2 fs-4" aria-current="page" > <i class="fa-solid fa-right-from-bracket"></i> </a>
+            <a class="nav-link active text-light pe-2 ps-2 fs-4" aria-current="page" ><?= $_SESSION['user_name']?></a>
+            <a href="<?= URL ?>/users/logout" class="nav-link active text-light pe-2 ps-2 fs-4" aria-current="page" > <i class="fa-solid fa-right-from-bracket"></i> </a>
           </div>
       <?php endif; ?>
     </div>

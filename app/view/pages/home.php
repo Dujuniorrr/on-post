@@ -1,3 +1,6 @@
+<?php
+
+?>    
     <main>
         <div class="container m-auto mt-5 mb-5">
            <div class="row home-card">

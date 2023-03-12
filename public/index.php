@@ -26,6 +26,6 @@
 
     <script src="<?= URL ?>/public/js/script.js"> </script>
     <script src="<?= URL ?>/public/js/jquery-3.6.3.min.js"> </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
